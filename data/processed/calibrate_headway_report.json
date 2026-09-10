@@ -1,0 +1,98 @@
+{
+  "gap_s": 90.0,
+  "bus": {
+    "routes_with_estimates": 688,
+    "routes_considered": 688,
+    "rows": 10550
+  },
+  "bus_mode_headway_by_hour_s": {
+    "4": 180,
+    "5": 600,
+    "6": 480,
+    "7": 450,
+    "8": 420,
+    "9": 450,
+    "10": 480,
+    "11": 514,
+    "12": 514,
+    "13": 540,
+    "14": 514,
+    "15": 514,
+    "16": 450,
+    "17": 420,
+    "18": 450,
+    "19": 514,
+    "20": 600,
+    "21": 720,
+    "22": 720,
+    "23": 585
+  },
+  "bus_mode_headway_all_s": 480.0,
+  "subway_access_egress": {
+    "access_egress_s": 113.47089566032514,
+    "quantile": 0.08,
+    "n_obs": 31057,
+    "resid_quantiles_s": {
+      "0.02": 71.05729240975346,
+      "0.05": 96.86170091313181,
+      "0.08": 113.47089566032514,
+      "0.1": 122.44302582738777,
+      "0.25": 181.77912522942452,
+      "0.5": 273.42399087203717
+    }
+  },
+  "subway": {
+    "method": "prior",
+    "mode_all": {
+      "intercept_s": 327.3196457765688,
+      "per_stop_s": 35.0,
+      "wait_s": 150.0,
+      "headway_s": 300.0,
+      "access_egress_effective_s": 142.3196457765688,
+      "headway_implied_s": 357.6975002324873,
+      "n_obs": 566249
+    },
+    "mode_am_peak": {
+      "intercept_s": 292.378152876531,
+      "per_stop_s": 35.0,
+      "wait_s": 90.0,
+      "headway_s": 180.0,
+      "access_egress_effective_s": 167.37815287653098,
+      "headway_implied_s": 287.81451443241167,
+      "n_obs": 149145
+    },
+    "mode_pm_peak": {
+      "intercept_s": 305.79964310110523,
+      "per_stop_s": 35.0,
+      "wait_s": 90.0,
+      "headway_s": 180.0,
+      "access_egress_effective_s": 180.79964310110523,
+      "headway_implied_s": 314.6574948815602,
+      "n_obs": 116912
+    },
+    "mode_off_peak": {
+      "intercept_s": 348.6699980902886,
+      "per_stop_s": 35.0,
+      "wait_s": 180.0,
+      "headway_s": 360.0,
+      "access_egress_effective_s": 133.66999809028857,
+      "headway_implied_s": 400.39820485992686,
+      "n_obs": 291482
+    },
+    "mode_night": {
+      "intercept_s": 398.4071922717367,
+      "per_stop_s": 35.0,
+      "wait_s": 240.0,
+      "headway_s": 480.0,
+      "access_egress_effective_s": 123.40719227173668,
+      "headway_implied_s": 499.87259322282307,
+      "n_obs": 8710
+    }
+  },
+  "subway_mode": "prior",
+  "subway_access_egress_effective_s": 142.3196457765688,
+  "subway_bounds_s": [
+    120.0,
+    900.0
+  ]
+}
