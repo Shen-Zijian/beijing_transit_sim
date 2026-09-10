@@ -1,0 +1,440 @@
+{
+  "calibrated": {
+    "all": {
+      "n": 141893,
+      "sim_mean": 19.70181580486705,
+      "obs_mean": 20.288890337554825,
+      "sim_median": 17.5,
+      "obs_median": 17.6,
+      "sim_p90": 38.333333333333336,
+      "obs_p90": 39.63333333333333,
+      "mean_error": -0.5870745326877765,
+      "mae": 4.379130283617468,
+      "rmse": 7.432717411031267,
+      "ks_stat": 0.027274072716765452,
+      "wasserstein_min": 0.6533665038679382,
+      "corr": 0.8545969637820191
+    },
+    "subway": {
+      "n": 59238,
+      "sim_mean": 28.801546304736824,
+      "obs_mean": 27.599009363359105,
+      "sim_median": 27.5,
+      "obs_median": 25.933333333333334,
+      "sim_p90": 44.833333333333336,
+      "obs_p90": 44.86666666666667,
+      "mean_error": 1.2025369413777192,
+      "mae": 4.440293111403716,
+      "rmse": 7.387688643829509,
+      "ks_stat": 0.07312873493365746,
+      "wasserstein_min": 1.77989719436848,
+      "corr": 0.8403502634998666
+    },
+    "bus": {
+      "n": 82655,
+      "sim_mean": 13.1801312685258,
+      "obs_mean": 15.049802189825176,
+      "sim_median": 10.65,
+      "obs_median": 11.716666666666667,
+      "sim_p90": 27.15,
+      "obs_p90": 31.633333333333333,
+      "mean_error": -1.8696709212993772,
+      "mae": 4.335295505414071,
+      "rmse": 7.464821982286627,
+      "ks_stat": 0.05438267497429072,
+      "wasserstein_min": 1.9776700340773918,
+      "corr": 0.8054711336301982
+    }
+  },
+  "legacy": {
+    "all": {
+      "n": 138744,
+      "sim_mean": 16.238575722193392,
+      "obs_mean": 20.047384151146474,
+      "sim_median": 14.15,
+      "obs_median": 17.3,
+      "sim_p90": 32.166666666666664,
+      "obs_p90": 39.31666666666667,
+      "mean_error": -3.8088084289530837,
+      "mae": 6.1975421159353425,
+      "rmse": 9.61728709962839,
+      "ks_stat": 0.10228190047857932,
+      "wasserstein_min": 3.825243253762324,
+      "corr": 0.7793143507483621
+    },
+    "subway": {
+      "n": 56211,
+      "sim_mean": 22.969436587144866,
+      "obs_mean": 27.496166527310788,
+      "sim_median": 22.0,
+      "obs_median": 25.8,
+      "sim_p90": 37.0,
+      "obs_p90": 44.833333333333336,
+      "mean_error": -4.5267299401659225,
+      "mae": 7.451327735378011,
+      "rmse": 10.65579897826041,
+      "ks_stat": 0.1373040863887851,
+      "wasserstein_min": 4.528795965202541,
+      "corr": 0.7022735817777621
+    },
+    "bus": {
+      "n": 82533,
+      "sim_mean": 11.65436794978978,
+      "obs_mean": 14.974219403147831,
+      "sim_median": 9.15,
+      "obs_median": 11.666666666666666,
+      "sim_p90": 24.65,
+      "obs_p90": 31.466666666666665,
+      "mean_error": -3.3198514533580505,
+      "mae": 5.343622550979608,
+      "rmse": 8.840419004236686,
+      "ks_stat": 0.11132516690293587,
+      "wasserstein_min": 3.3462380704283943,
+      "corr": 0.7357485197961003
+    }
+  },
+  "hourly_calibrated": [
+    {
+      "origin_mode": "bus",
+      "departure_hour": 5,
+      "n": 763,
+      "sim_mean": 16.892900830056792,
+      "obs_mean": 15.522062035823504,
+      "sim_median": 14.316666666666666,
+      "obs_median": 13.616666666666667
+    },
+    {
+      "origin_mode": "bus",
+      "departure_hour": 6,
+      "n": 3901,
+      "sim_mean": 15.02738186789712,
+      "obs_mean": 16.676065965991626,
+      "sim_median": 12.816666666666666,
+      "obs_median": 13.516666666666667
+    },
+    {
+      "origin_mode": "bus",
+      "departure_hour": 7,
+      "n": 7634,
+      "sim_mean": 14.564789101388525,
+      "obs_mean": 18.031490699502225,
+      "sim_median": 11.65,
+      "obs_median": 13.841666666666667
+    },
+    {
+      "origin_mode": "bus",
+      "departure_hour": 8,
+      "n": 8847,
+      "sim_mean": 13.776295165969632,
+      "obs_mean": 15.650199691044046,
+      "sim_median": 10.983333333333333,
+      "obs_median": 11.916666666666666
+    },
+    {
+      "origin_mode": "bus",
+      "departure_hour": 9,
+      "n": 7053,
+      "sim_mean": 12.417474833404224,
+      "obs_mean": 14.548083557824093,
+      "sim_median": 9.65,
+      "obs_median": 10.883333333333333
+    },
+    {
+      "origin_mode": "bus",
+      "departure_hour": 10,
+      "n": 5610,
+      "sim_mean": 11.899970291146762,
+      "obs_mean": 13.91054367201426,
+      "sim_median": 9.566666666666666,
+      "obs_median": 10.6
+    },
+    {
+      "origin_mode": "bus",
+      "departure_hour": 11,
+      "n": 4707,
+      "sim_mean": 12.264014588201968,
+      "obs_mean": 13.48285532186106,
+      "sim_median": 9.816666666666666,
+      "obs_median": 10.433333333333334
+    },
+    {
+      "origin_mode": "bus",
+      "departure_hour": 12,
+      "n": 4293,
+      "sim_mean": 12.853043714574113,
+      "obs_mean": 13.650815280689494,
+      "sim_median": 10.316666666666666,
+      "obs_median": 10.833333333333334
+    },
+    {
+      "origin_mode": "bus",
+      "departure_hour": 13,
+      "n": 4148,
+      "sim_mean": 13.170170363227259,
+      "obs_mean": 14.783590485374479,
+      "sim_median": 10.65,
+      "obs_median": 11.391666666666666
+    },
+    {
+      "origin_mode": "bus",
+      "departure_hour": 14,
+      "n": 4393,
+      "sim_mean": 13.035992867440626,
+      "obs_mean": 15.073924425221945,
+      "sim_median": 10.316666666666666,
+      "obs_median": 11.75
+    },
+    {
+      "origin_mode": "bus",
+      "departure_hour": 15,
+      "n": 4769,
+      "sim_mean": 12.412319144474733,
+      "obs_mean": 14.182201020479486,
+      "sim_median": 9.983333333333333,
+      "obs_median": 11.133333333333333
+    },
+    {
+      "origin_mode": "bus",
+      "departure_hour": 16,
+      "n": 5401,
+      "sim_mean": 12.335860643090786,
+      "obs_mean": 14.467157316546318,
+      "sim_median": 9.983333333333333,
+      "obs_median": 11.433333333333334
+    },
+    {
+      "origin_mode": "bus",
+      "departure_hour": 17,
+      "n": 6630,
+      "sim_mean": 13.377928607340372,
+      "obs_mean": 16.27219708396179,
+      "sim_median": 10.816666666666666,
+      "obs_median": 12.9
+    },
+    {
+      "origin_mode": "bus",
+      "departure_hour": 18,
+      "n": 5880,
+      "sim_mean": 13.750198412698413,
+      "obs_mean": 15.346164965986395,
+      "sim_median": 11.316666666666666,
+      "obs_median": 12.533333333333333
+    },
+    {
+      "origin_mode": "bus",
+      "departure_hour": 19,
+      "n": 3560,
+      "sim_mean": 12.429541198501871,
+      "obs_mean": 13.376310861423221,
+      "sim_median": 9.983333333333333,
+      "obs_median": 10.716666666666667
+    },
+    {
+      "origin_mode": "bus",
+      "departure_hour": 20,
+      "n": 2546,
+      "sim_mean": 12.826289604608537,
+      "obs_mean": 13.9528672427337,
+      "sim_median": 10.483333333333333,
+      "obs_median": 11.475
+    },
+    {
+      "origin_mode": "bus",
+      "departure_hour": 21,
+      "n": 1759,
+      "sim_mean": 13.256878908470721,
+      "obs_mean": 13.680756111426948,
+      "sim_median": 10.65,
+      "obs_median": 11.466666666666667
+    },
+    {
+      "origin_mode": "bus",
+      "departure_hour": 22,
+      "n": 720,
+      "sim_mean": 13.413425925925925,
+      "obs_mean": 12.782291666666667,
+      "sim_median": 11.15,
+      "obs_median": 10.616666666666667
+    },
+    {
+      "origin_mode": "bus",
+      "departure_hour": 23,
+      "n": 41,
+      "sim_mean": 10.645934959349594,
+      "obs_mean": 9.192276422764227,
+      "sim_median": 9.983333333333333,
+      "obs_median": 8.816666666666666
+    },
+    {
+      "origin_mode": "subway",
+      "departure_hour": 5,
+      "n": 407,
+      "sim_mean": 33.03644553644554,
+      "obs_mean": 35.68587223587223,
+      "sim_median": 32.666666666666664,
+      "obs_median": 34.53333333333333
+    },
+    {
+      "origin_mode": "subway",
+      "departure_hour": 6,
+      "n": 2348,
+      "sim_mean": 31.77015900056786,
+      "obs_mean": 29.19356899488927,
+      "sim_median": 30.5,
+      "obs_median": 27.775
+    },
+    {
+      "origin_mode": "subway",
+      "departure_hour": 7,
+      "n": 7376,
+      "sim_mean": 30.138218546637745,
+      "obs_mean": 28.45137834417932,
+      "sim_median": 29.0,
+      "obs_median": 27.116666666666667
+    },
+    {
+      "origin_mode": "subway",
+      "departure_hour": 8,
+      "n": 8005,
+      "sim_mean": 27.993774724130752,
+      "obs_mean": 26.884763689360817,
+      "sim_median": 26.666666666666668,
+      "obs_median": 25.3
+    },
+    {
+      "origin_mode": "subway",
+      "departure_hour": 9,
+      "n": 3867,
+      "sim_mean": 28.318679424187568,
+      "obs_mean": 26.201887768295837,
+      "sim_median": 27.0,
+      "obs_median": 24.383333333333333
+    },
+    {
+      "origin_mode": "subway",
+      "departure_hour": 10,
+      "n": 2297,
+      "sim_mean": 28.767958206356116,
+      "obs_mean": 27.843629371644173,
+      "sim_median": 27.333333333333332,
+      "obs_median": 26.016666666666666
+    },
+    {
+      "origin_mode": "subway",
+      "departure_hour": 11,
+      "n": 2126,
+      "sim_mean": 28.810363750391975,
+      "obs_mean": 28.11469112574475,
+      "sim_median": 27.666666666666668,
+      "obs_median": 26.183333333333334
+    },
+    {
+      "origin_mode": "subway",
+      "departure_hour": 12,
+      "n": 2113,
+      "sim_mean": 29.427827733080928,
+      "obs_mean": 29.280580533207132,
+      "sim_median": 28.333333333333332,
+      "obs_median": 27.516666666666666
+    },
+    {
+      "origin_mode": "subway",
+      "departure_hour": 13,
+      "n": 2296,
+      "sim_mean": 29.084494773519165,
+      "obs_mean": 28.72609610917538,
+      "sim_median": 27.833333333333332,
+      "obs_median": 26.975
+    },
+    {
+      "origin_mode": "subway",
+      "departure_hour": 14,
+      "n": 2291,
+      "sim_mean": 28.902298850574716,
+      "obs_mean": 28.51238905863524,
+      "sim_median": 27.833333333333332,
+      "obs_median": 26.716666666666665
+    },
+    {
+      "origin_mode": "subway",
+      "departure_hour": 15,
+      "n": 2475,
+      "sim_mean": 28.822491582491583,
+      "obs_mean": 28.329966329966332,
+      "sim_median": 27.5,
+      "obs_median": 26.45
+    },
+    {
+      "origin_mode": "subway",
+      "departure_hour": 16,
+      "n": 3255,
+      "sim_mean": 28.88714797747056,
+      "obs_mean": 27.257982590885817,
+      "sim_median": 27.833333333333332,
+      "obs_median": 25.65
+    },
+    {
+      "origin_mode": "subway",
+      "departure_hour": 17,
+      "n": 6457,
+      "sim_mean": 27.909529709359354,
+      "obs_mean": 26.603456197408498,
+      "sim_median": 26.666666666666668,
+      "obs_median": 25.1
+    },
+    {
+      "origin_mode": "subway",
+      "departure_hour": 18,
+      "n": 6069,
+      "sim_mean": 27.61160542648432,
+      "obs_mean": 26.82987861811391,
+      "sim_median": 26.166666666666668,
+      "obs_median": 25.15
+    },
+    {
+      "origin_mode": "subway",
+      "departure_hour": 19,
+      "n": 3254,
+      "sim_mean": 28.432134808440896,
+      "obs_mean": 26.535586969883223,
+      "sim_median": 27.5,
+      "obs_median": 25.133333333333333
+    },
+    {
+      "origin_mode": "subway",
+      "departure_hour": 20,
+      "n": 2192,
+      "sim_mean": 29.050562652068127,
+      "obs_mean": 27.80590784671533,
+      "sim_median": 27.666666666666668,
+      "obs_median": 25.966666666666665
+    },
+    {
+      "origin_mode": "subway",
+      "departure_hour": 21,
+      "n": 1618,
+      "sim_mean": 29.72908941079522,
+      "obs_mean": 28.816337041615164,
+      "sim_median": 28.166666666666668,
+      "obs_median": 27.108333333333334
+    },
+    {
+      "origin_mode": "subway",
+      "departure_hour": 22,
+      "n": 744,
+      "sim_mean": 28.515905017921146,
+      "obs_mean": 27.173678315412186,
+      "sim_median": 27.5,
+      "obs_median": 25.34166666666667
+    },
+    {
+      "origin_mode": "subway",
+      "departure_hour": 23,
+      "n": 48,
+      "sim_mean": 21.590277777777775,
+      "obs_mean": 20.447916666666668,
+      "sim_median": 20.5,
+      "obs_median": 18.233333333333334
+    }
+  ]
+}
