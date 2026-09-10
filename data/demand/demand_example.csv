@@ -1,0 +1,7 @@
+sid,pid,time,origin_id,origin_type,destination_id,destination_type
+1,demo_001,25200,BV10013394,subway,BV10013485,subway
+2,demo_002,25260,BV10013485,subway,BV10013411,subway
+3,demo_003,25320,BV10013411,subway,BV10001215,subway
+4,demo_004,25380,BV10013394,subway,BV10013411,subway
+5,demo_005,25440,BV10013485,subway,BV10001215,subway
+6,demo_006,25500,BV10013394,subway,BV10001215,subway
