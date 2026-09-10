@@ -1,0 +1,83 @@
+# 纯净公交-地铁仿真核心默认配置
+# 所有时间单位为秒（headway / dwell / 换乘 / 进出站），速度：车辆 km/h，步行 m/s。
+# 本文件为"未标定"的基线；标定流水线会生成 config/calibrated_20190513.yaml 覆盖其中的参数。
+
+time:
+  time_step: 10            # 仿真步长 (s)
+  sim_start: 18000         # 05:00
+  sim_end: 86400           # 24:00
+  seed: 42
+
+network:
+  version: "2019"          # "2019" | "full"，对应 data/network/{nodes,edges}_{version}.csv
+  dir: "data/network"
+  line_speeds_file: null       # 线路级车速表 (line_id, period, speed_kmh, dwell_s)，缺省用 speeds.*
+  line_headways_file: null     # 线路级/模式级分小时发车间隔表 (line_id|mode, hour, headway_s)
+  transfer_times_file: null    # 站点级同站换乘时间 (station_id, transfer_time_s)
+
+demand:
+  file: "data/demand/demand_20190513.csv"
+  fraction: 0.05           # 确定性抽样比例；车辆容量按同比例缩放
+  time_column: "time"      # 出发时刻（当天秒）
+
+speeds:                    # 模式级运行速度（线路级表缺失时的回落值）
+  subway: 35.0             # km/h（商业速度，含站间加减速，不含停站）
+  bus: 18.0                # km/h
+  walk: 1.2                # m/s（步行/换乘边按 距离/walk 重算）
+
+dwell:                     # 每站开门停站时间 (s)，乘客在此期间上下车
+  subway: 30
+  bus: 20
+
+stop_delay:                # 每个站间段附加的固定运行延误 (s)：加减速/进出站/信号；不停车
+  subway: 0
+  bus: 0
+
+terminal_hold:             # 首站发车前停留 (s)，首站上车的乘客经历该时间
+  subway: 0
+  bus: 0
+
+headways:                  # 模式级发车间隔 (s)，可为常数或按小时字典 {5: 600, 6: 300, ...}
+  subway: 300
+  bus: 600
+
+service_hours:             # 各模式发车时段 [起, 止]，小时（含小数）
+  subway: [5.0, 23.5]
+  bus: [5.0, 23.0]
+
+capacity_real:             # 真实单车定员（人）；有效容量 = capacity_real * demand.fraction（≥1）
+  subway: 1460             # 6 编组 B 型车约 1400–1500
+  bus: 90
+
+transfer:
+  same_station:            # 同站换乘（不同线路、同一站点节点）的步行时间 (s)
+    subway: 180
+    bus: 30
+    intermodal: 180
+  routing_penalty: 180     # 路径搜索中每次换乘的感知惩罚 (s)，不计入物理时间
+
+access_egress:             # 进站(刷卡→站台)/出站(站台→刷卡)时间 (s)，仅地铁；公交为 0
+  subway: 240
+  bus: 0
+
+passenger:
+  max_wait_time: 1500      # 单次候车超过该时长触发超时处理 (s)
+  timeout_action: "exit"   # "exit" | "reroute"
+  max_reroutes: 2
+
+choice:
+  model: "logit"           # "shortest" | "logit"
+  k_paths: 5
+  beta_ivt: 1.0            # 车内时间权重
+  beta_wait: 1.5           # 期望等待 (headway/2 × 上车次数) 权重
+  beta_walk: 1.5           # 步行/换乘步行时间权重
+  beta_transfer: 300.0     # 每次换乘的固定惩罚 (s 当量)
+  theta: 0.005             # logit 尺度参数 (1/s)；越大越接近确定性最短路
+
+routing:
+  cache_file: "data/processed/route_cache_2019.pkl"   # k 短路缓存（可由 scripts/precompute_paths.py 预生成）
+
+output:
+  dir: "output"
+  log_every: 3600          # 打印/记录系统状态的间隔 (s)
+  save_trips: true
